@@ -1,0 +1,3 @@
+$('#mimodal').modal({
+	show:true
+	})

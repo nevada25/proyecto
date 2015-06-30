@@ -1,0 +1,64 @@
+.cabecera{
+	background: #000000;
+	color: #FFFFFF;
+	height: 150px;
+	font-size: 500%;
+	padding: 20px;
+	text-align:center;
+	 border-radius:	0.5em 0.5em 0px 0px;
+	 z-index:1;
+	 font-weight: bold;
+}
+.sub-header{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+.logo_cabeza{
+	z-index:2;
+	padding: 20px;
+}
+header{
+	background: #000000;
+     border-radius:	1em 1em 0px 0px;
+}
+
+.titulo1{
+	text-align: center;
+	color: #0000FF;
+}
+
+.cuerpo1{
+	text-align: justify;
+	height: 515px;
+}
+
+.pie{
+	background: #BDBDBD;
+	font-size: 90%;
+	text-align: center;
+	height:55px;
+	 font-weight: bold;
+	 position:relative;
+	
+}
+div.logo3{
+	position:relative;
+}
+.logo_f{
+	margin:0.5%;
+	position:relative;
+}
+.menu{
+	margin-top: -25px;
+	margin-left: 56px;
+
+}
+section#principal{
+	width:600px;
+}
+section#general{
+	margin:2% 5%;
+	background: url(../img/fondo3.jpg)  #fff;
+	
+	border-radius:1.5em;
+}

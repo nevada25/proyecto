@@ -1,0 +1,16 @@
+form.for{
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    
+    
+}
+button.user.contra{
+    width: 60px;
+}
+button.envia{
+    width: 320px;
+    padding: 12px;
+    margin: 12px;
+    border-radius: 0.5em;
+}

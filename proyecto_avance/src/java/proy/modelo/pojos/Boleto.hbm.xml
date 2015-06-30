@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 21/06/2015 10:04:22 AM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="proy.modelo.entidad.Boleto" table="BOLETO" schema="PROYECTO">
+        <id name="idVoleto" type="string">
+            <column name="ID_VOLETO" length="30" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="pasajero" class="proy.modelo.entidad.Pasajero" fetch="select">
+            <column name="ID_PASAJERO" length="30" not-null="true" />
+        </many-to-one>
+        <many-to-one name="viaje" class="proy.modelo.entidad.Viaje" fetch="select">
+            <column name="ID_VIAJE" length="30" not-null="true" />
+        </many-to-one>
+        <property name="valorPagar" type="string">
+            <column name="VALOR_PAGAR" length="30" />
+        </property>
+        <property name="boletos" type="string">
+            <column name="BOLETOS" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>

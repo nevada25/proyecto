@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 21/06/2015 10:04:22 AM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="proy.modelo.entidad.Ciudad" table="CIUDAD" schema="PROYECTO">
+        <id name="idCiudad" type="string">
+            <column name="ID_CIUDAD" length="30" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="NOMBRE" length="60" />
+        </property>
+        <set name="viajesForIdCiudadDestino" table="VIAJE" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="ID_CIUDAD_DESTINO" length="30" not-null="true" />
+            </key>
+            <one-to-many class="proy.modelo.entidad.Viaje" />
+        </set>
+        <set name="viajesForIdCiudadSalida" table="VIAJE" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="ID_CIUDAD_SALIDA" length="30" not-null="true" />
+            </key>
+            <one-to-many class="proy.modelo.entidad.Viaje" />
+        </set>
+    </class>
+</hibernate-mapping>
